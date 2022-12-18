@@ -1,0 +1,210 @@
+﻿//
+// Summary:
+//     Correlates the elements of two sequences based on key equality and groups the
+//     results. A specified System.Collections.Generic.IEqualityComparer`1 is used to
+//     compare keys.
+//
+// Parameters:
+//   outer:
+//     The first sequence to join.
+//
+//   inner:
+//     The sequence to join to the first sequence.
+//
+//   outerKeySelector:
+//     A function to extract the join key from each element of the first sequence.
+//
+//   innerKeySelector:
+//     A function to extract the join key from each element of the second sequence.
+//
+//   resultSelector:
+//     A function to create a result element from an element from the first sequence
+//     and a collection of matching elements from the second sequence.
+//
+//   comparer:
+//     An System.Collections.Generic.IEqualityComparer`1 to hash and compare keys.
+//
+// Type parameters:
+//   TOuter:
+//     The type of the elements of the first sequence.
+//
+//   TInner:
+//     The type of the elements of the second sequence.
+//
+//   TKey:
+//     The type of the keys returned by the key selector functions.
+//
+//   TResult:
+//     The type of the result elements.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that contains elements of type TResult
+//     that are obtained by performing a grouped join on two sequences.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     outer or inner or outerKeySelector or innerKeySelector or resultSelector is null.
+public static IEnumerable<TResult> GroupJoin<TOuter, TInner, TKey, TResult>(this IEnumerable<TOuter> outer, IEnumerable<TInner> inner, Func<TOuter, TKey> outerKeySelector, Func<TInner, TKey> innerKeySelector, Func<TOuter, IEnumerable<TInner>, TResult> resultSelector, IEqualityComparer<TKey> comparer);
+//
+// Summary:
+//     Correlates the elements of two sequences based on equality of keys and groups
+//     the results. The default equality comparer is used to compare keys.
+//
+// Parameters:
+//   outer:
+//     The first sequence to join.
+//
+//   inner:
+//     The sequence to join to the first sequence.
+//
+//   outerKeySelector:
+//     A function to extract the join key from each element of the first sequence.
+//
+//   innerKeySelector:
+//     A function to extract the join key from each element of the second sequence.
+//
+//   resultSelector:
+//     A function to create a result element from an element from the first sequence
+//     and a collection of matching elements from the second sequence.
+//
+// Type parameters:
+//   TOuter:
+//     The type of the elements of the first sequence.
+//
+//   TInner:
+//     The type of the elements of the second sequence.
+//
+//   TKey:
+//     The type of the keys returned by the key selector functions.
+//
+//   TResult:
+//     The type of the result elements.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that contains elements of type TResult
+//     that are obtained by performing a grouped join on two sequences.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     outer or inner or outerKeySelector or innerKeySelector or resultSelector is null.
+public static IEnumerable<TResult> GroupJoin<TOuter, TInner, TKey, TResult>(this IEnumerable<TOuter> outer, IEnumerable<TInner> inner, Func<TOuter, TKey> outerKeySelector, Func<TInner, TKey> innerKeySelector, Func<TOuter, IEnumerable<TInner>, TResult> resultSelector);
+//
+// Summary:
+//     Correlates the elements of two sequences based on matching keys. The default
+//     equality comparer is used to compare keys.
+//
+// Parameters:
+//   outer:
+//     The first sequence to join.
+//
+//   inner:
+//     The sequence to join to the first sequence.
+//
+//   outerKeySelector:
+//     A function to extract the join key from each element of the first sequence.
+//
+//   innerKeySelector:
+//     A function to extract the join key from each element of the second sequence.
+//
+//   resultSelector:
+//     A function to create a result element from two matching elements.
+//
+// Type parameters:
+//   TOuter:
+//     The type of the elements of the first sequence.
+//
+//   TInner:
+//     The type of the elements of the second sequence.
+//
+//   TKey:
+//     The type of the keys returned by the key selector functions.
+//
+//   TResult:
+//     The type of the result elements.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that has elements of type TResult
+//     that are obtained by performing an inner join on two sequences.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     outer or inner or outerKeySelector or innerKeySelector or resultSelector is null.
+public static IEnumerable<TResult> Join<TOuter, TInner, TKey, TResult>(this IEnumerable<TOuter> outer, IEnumerable<TInner> inner, Func<TOuter, TKey> outerKeySelector, Func<TInner, TKey> innerKeySelector, Func<TOuter, TInner, TResult> resultSelector);
+//
+// Summary:
+//     Correlates the elements of two sequences based on matching keys. A specified
+//     System.Collections.Generic.IEqualityComparer`1 is used to compare keys.
+//
+// Parameters:
+//   outer:
+//     The first sequence to join.
+//
+//   inner:
+//     The sequence to join to the first sequence.
+//
+//   outerKeySelector:
+//     A function to extract the join key from each element of the first sequence.
+//
+//   innerKeySelector:
+//     A function to extract the join key from each element of the second sequence.
+//
+//   resultSelector:
+//     A function to create a result element from two matching elements.
+//
+//   comparer:
+//     An System.Collections.Generic.IEqualityComparer`1 to hash and compare keys.
+//
+// Type parameters:
+//   TOuter:
+//     The type of the elements of the first sequence.
+//
+//   TInner:
+//     The type of the elements of the second sequence.
+//
+//   TKey:
+//     The type of the keys returned by the key selector functions.
+//
+//   TResult:
+//     The type of the result elements.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that has elements of type TResult
+//     that are obtained by performing an inner join on two sequences.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     outer or inner or outerKeySelector or innerKeySelector or resultSelector is null.
+public static IEnumerable<TResult> Join<TOuter, TInner, TKey, TResult>(this IEnumerable<TOuter> outer, IEnumerable<TInner> inner, Func<TOuter, TKey> outerKeySelector, Func<TInner, TKey> innerKeySelector, Func<TOuter, TInner, TResult> resultSelector, IEqualityComparer<TKey> comparer);
+//
+// Summary:
+//     Applies a specified function to the corresponding elements of two sequences,
+//     producing a sequence of the results.
+//
+// Parameters:
+//   first:
+//     The first sequence to merge.
+//
+//   second:
+//     The second sequence to merge.
+//
+//   resultSelector:
+//     A function that specifies how to merge the elements from the two sequences.
+//
+// Type parameters:
+//   TFirst:
+//     The type of the elements of the first input sequence.
+//
+//   TSecond:
+//     The type of the elements of the second input sequence.
+//
+//   TResult:
+//     The type of the elements of the result sequence.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that contains merged elements of
+//     two input sequences.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     first or second is null.
+public static IEnumerable<TResult> Zip<TFirst, TSecond, TResult>(this IEnumerable<TFirst> first, IEnumerable<TSecond> second, Func<TFirst, TSecond, TResult> resultSelector);

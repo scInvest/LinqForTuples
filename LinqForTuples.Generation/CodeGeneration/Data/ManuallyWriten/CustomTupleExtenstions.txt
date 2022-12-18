@@ -1,0 +1,5 @@
+﻿public static void ForEach<T>(IEnumerable<T> collection, Action<T> apply)
+public static IEnumerable<T> Apply<T>(IEnumerable<T> collection, Action<T> apply)
+public static IEnumerable<T> Concat<T>(IEnumerable<T> collection, params T[] items)
+public static bool AnyIsNull<T>(IEnumerable<T> collection)
+public static IEnumerable<T> WhereNotNull<T>(IEnumerable<T> collection)

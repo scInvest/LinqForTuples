@@ -1,0 +1,686 @@
+﻿//
+// Summary:
+//     Computes the average of a sequence of System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int32 values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static double Average(this IEnumerable<int> source);
+//
+// Summary:
+//     Computes the average of a sequence of nullable System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int64 values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values, or null if the source sequence is empty
+//     or contains only values that are null.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum of the elements in the sequence is larger than System.Int64.MaxValue.
+public static double? Average(this IEnumerable<long?> source);
+//
+// Summary:
+//     Computes the average of a sequence of System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Single values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static float Average(this IEnumerable<float> source);
+//
+// Summary:
+//     Computes the average of a sequence of nullable System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Single values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values, or null if the source sequence is empty
+//     or contains only values that are null.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static float? Average(this IEnumerable<float?> source);
+//
+// Summary:
+//     Computes the average of a sequence of System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Double values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static double Average(this IEnumerable<double> source);
+//
+// Summary:
+//     Computes the average of a sequence of System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int64 values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static double Average(this IEnumerable<long> source);
+//
+// Summary:
+//     Computes the average of a sequence of nullable System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int32 values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values, or null if the source sequence is empty
+//     or contains only values that are null.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum of the elements in the sequence is larger than System.Int64.MaxValue.
+public static double? Average(this IEnumerable<int?> source);
+//
+// Summary:
+//     Computes the average of a sequence of nullable System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Double values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values, or null if the source sequence is empty
+//     or contains only values that are null.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static double? Average(this IEnumerable<double?> source);
+//
+// Summary:
+//     Computes the average of a sequence of System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Decimal values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static decimal Average(this IEnumerable<decimal> source);
+//
+// Summary:
+//     Computes the average of a sequence of nullable System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Decimal values to calculate the average of.
+//
+// Returns:
+//     The average of the sequence of values, or null if the source sequence is empty
+//     or contains only values that are null.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum of the elements in the sequence is larger than System.Decimal.MaxValue.
+public static decimal? Average(this IEnumerable<decimal?> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of nullable System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int32 values to determine the maximum value of.
+//
+// Returns:
+//     A value of type Nullable<Int32> in C# or Nullable(Of Int32) in Visual Basic that
+//     corresponds to the maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static int? Max(this IEnumerable<int?> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of nullable System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int64 values to determine the maximum value of.
+//
+// Returns:
+//     A value of type Nullable<Int64> in C# or Nullable(Of Int64) in Visual Basic that
+//     corresponds to the maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static long? Max(this IEnumerable<long?> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int64 values to determine the maximum value of.
+//
+// Returns:
+//     The maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static long Max(this IEnumerable<long> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int32 values to determine the maximum value of.
+//
+// Returns:
+//     The maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static int Max(this IEnumerable<int> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Double values to determine the maximum value of.
+//
+// Returns:
+//     The maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static double Max(this IEnumerable<double> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of nullable System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Double values to determine the maximum value of.
+//
+// Returns:
+//     A value of type Nullable<Double> in C# or Nullable(Of Double) in Visual Basic
+//     that corresponds to the maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static double? Max(this IEnumerable<double?> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of nullable System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Decimal values to determine the maximum value of.
+//
+// Returns:
+//     A value of type Nullable<Decimal> in C# or Nullable(Of Decimal) in Visual Basic
+//     that corresponds to the maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static decimal? Max(this IEnumerable<decimal?> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Decimal values to determine the maximum value of.
+//
+// Returns:
+//     The maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static decimal Max(this IEnumerable<decimal> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of nullable System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Single values to determine the maximum value of.
+//
+// Returns:
+//     A value of type Nullable<Single> in C# or Nullable(Of Single) in Visual Basic
+//     that corresponds to the maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static float? Max(this IEnumerable<float?> source);
+//
+// Summary:
+//     Returns the maximum value in a sequence of System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Single values to determine the maximum value of.
+//
+// Returns:
+//     The maximum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static float Max(this IEnumerable<float> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of nullable System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Double values to determine the minimum value of.
+//
+// Returns:
+//     A value of type Nullable<Double> in C# or Nullable(Of Double) in Visual Basic
+//     that corresponds to the minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static double? Min(this IEnumerable<double?> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of nullable System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Decimal values to determine the minimum value of.
+//
+// Returns:
+//     A value of type Nullable<Decimal> in C# or Nullable(Of Decimal) in Visual Basic
+//     that corresponds to the minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static decimal? Min(this IEnumerable<decimal?> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Decimal values to determine the minimum value of.
+//
+// Returns:
+//     The minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static decimal Min(this IEnumerable<decimal> source);
+// Summary:
+//     Returns the minimum value in a sequence of nullable System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Single values to determine the minimum value of.
+//
+// Returns:
+//     A value of type Nullable<Single> in C# or Nullable(Of Single) in Visual Basic
+//     that corresponds to the minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static float? Min(this IEnumerable<float?> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Single values to determine the minimum value of.
+//
+// Returns:
+//     The minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static float Min(this IEnumerable<float> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of nullable System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int64 values to determine the minimum value of.
+//
+// Returns:
+//     A value of type Nullable<Int64> in C# or Nullable(Of Int64) in Visual Basic that
+//     corresponds to the minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static long? Min(this IEnumerable<long?> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int32 values to determine the minimum value of.
+//
+// Returns:
+//     The minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static int Min(this IEnumerable<int> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Double values to determine the minimum value of.
+//
+// Returns:
+//     The minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static double Min(this IEnumerable<double> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int64 values to determine the minimum value of.
+//
+// Returns:
+//     The minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidOperationException:
+//     source contains no elements.
+public static long Min(this IEnumerable<long> source);
+//
+// Summary:
+//     Returns the minimum value in a sequence of nullable System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int32 values to determine the minimum value of.
+//
+// Returns:
+//     A value of type Nullable<Int32> in C# or Nullable(Of Int32) in Visual Basic that
+//     corresponds to the minimum value in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static int? Min(this IEnumerable<int?> source);
+//
+// Summary:
+//     Computes the sum of a sequence of System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int32 values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum is larger than System.Int32.MaxValue.
+public static int Sum(this IEnumerable<int> source);
+//
+// Summary:
+//     Computes the sum of a sequence of System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Int64 values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum is larger than System.Int64.MaxValue.
+public static long Sum(this IEnumerable<long> source);
+//
+// Summary:
+//     Computes the sum of a sequence of nullable System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Decimal values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum is larger than System.Decimal.MaxValue.
+public static decimal? Sum(this IEnumerable<decimal?> source);
+//
+// Summary:
+//     Computes the sum of a sequence of System.Decimal values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Decimal values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum is larger than System.Decimal.MaxValue.
+public static decimal Sum(this IEnumerable<decimal> source);
+//
+// Summary:
+//     Computes the sum of a sequence of nullable System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Double values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static double? Sum(this IEnumerable<double?> source);
+//
+// Summary:
+//     Computes the sum of a sequence of System.Double values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Double values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static double Sum(this IEnumerable<double> source);
+//
+// Summary:
+//     Computes the sum of a sequence of nullable System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Single values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static float? Sum(this IEnumerable<float?> source);
+//
+// Summary:
+//     Computes the sum of a sequence of System.Single values.
+//
+// Parameters:
+//   source:
+//     A sequence of System.Single values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static float Sum(this IEnumerable<float> source);
+//
+// Summary:
+//     Computes the sum of a sequence of nullable System.Int64 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int64 values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum is larger than System.Int64.MaxValue.
+public static long? Sum(this IEnumerable<long?> source);
+//
+// Summary:
+//     Computes the sum of a sequence of nullable System.Int32 values.
+//
+// Parameters:
+//   source:
+//     A sequence of nullable System.Int32 values to calculate the sum of.
+//
+// Returns:
+//     The sum of the values in the sequence.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.OverflowException:
+//     The sum is larger than System.Int32.MaxValue.
+public static int? Sum(this IEnumerable<int?> source);

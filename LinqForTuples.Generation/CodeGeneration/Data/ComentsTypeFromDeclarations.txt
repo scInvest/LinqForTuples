@@ -1,0 +1,44 @@
+Summary
+Parameters
+	source
+	func
+	seed
+	resultSelector
+	predicate
+	element
+	selector
+	first
+	second
+	value
+	comparer
+	defaultValue
+	index
+	keySelector
+	elementSelector
+	outer
+	inner
+	outerKeySelector
+	innerKeySelector
+	start
+	count
+	collectionSelector
+Type parameters
+	TSource
+	TAccumulate
+	TResult
+	TKey
+	TElement
+	TOuter
+	TInner
+	TCollection
+	TFirst
+	TSecond
+Returns
+Exceptions
+	TSystem.ArgumentNullException
+	TSystem.InvalidOperationException
+	TSystem.OverflowException
+	TSystem.InvalidCastException
+	TSystem.ArgumentOutOfRangeException
+	TSystem.ArgumentException
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Linq For Tuples</title>
+    <authors>Patryk PGR</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+	<!-- <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl> -->
+    <description>'Linq' like extenstion methods for symbol value tuples</description>
+    <releaseNotes>Initia package, working beta version</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>LinqForTuples Linq For Tuples</tags>
+	<readme>README.md</readme>
+  </metadata>
+    <files>
+		<file src="README.md" />
+    </files>
+</package>

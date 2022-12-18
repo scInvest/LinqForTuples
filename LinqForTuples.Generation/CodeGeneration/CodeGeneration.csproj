@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{948CCA36-3CB4-4D41-886B-615C82F5B300}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CodeGeneration</RootNamespace>
+    <AssemblyName>CodeGeneration</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Resource Include="Data\ManuallyWriten\TupleToEnumerable_Many.txt" />
+    <Content Include="Data\NumericNonGeneric.txt" />
+    <Content Include="Data\TSourceNotGeneric.txt" />
+    <Content Include="Data\ManuallyWriten\CustomTupleExtenstions.txt" />
+    <None Include="Data\ManuallyWriten\ReadMe" />
+    <Compile Include="FileInjectorWriter.cs" />
+    <Compile Include="FileInput.cs" />
+    <Compile Include="IGenerate.cs" />
+    <Compile Include="IInputReader.cs" />
+    <Compile Include="Language\ICSharpType.cs" />
+    <Compile Include="Language\IComment.cs" />
+    <Compile Include="Language\Implementations\CallStatickMethodWhitEnumerable.cs" />
+    <Compile Include="Language\Implementations\FirtsParamToEnumerable.cs" />
+    <Compile Include="Language\Implementations\LinqDecarationMethodBodyWithGeneric.cs" />
+    <Compile Include="Language\Implementations\TupleToEnumerable.cs" />
+    <Compile Include="Models\CopyFileGenerator.cs" />
+    <Compile Include="Models\IFinalGenerator.cs" />
+    <Compile Include="Models\GenerateAllTestingCases.cs" />
+    <Compile Include="Models\GenerateNetStandard.cs" />
+    <Compile Include="Models\GenrationOutputBaseOnCase.cs" />
+    <Compile Include="Models\HandWrittenClassCopier.cs" />
+    <Compile Include="Models\ICasesGenerator.cs" />
+    <Compile Include="Models\IMethodTemplateSource.cs" />
+    <Compile Include="Models\ParameterReplacers\AddAllCasesForTuple.cs" />
+    <Compile Include="Models\ParameterReplacers\AllTypesTupleGenerator.cs" />
+    <Compile Include="Models\ParameterReplacers\CompositeGenerator.cs" />
+    <Compile Include="Models\ParameterReplacers\MultiCollectionSwiper.cs" />
+    <Compile Include="Models\ParameterReplacers\ParamentersSwiperTuple.cs" />
+    <Compile Include="Models\ParameterReplacers\ParamentersSwiperTuple_EnumerationOrT.cs" />
+    <Compile Include="Models\ParameterReplacers\ParameterTypeGenerator.cs" />
+    <Compile Include="Models\ParameterReplacers\ParametesSwiperBaseOnFirstType.cs" />
+    <Compile Include="Models\ParameterReplacers\ParametesSwiperBaseOnTSourceGeneric.cs" />
+    <Compile Include="Models\ParameterReplacers\SameClassTupleGenerator.cs" />
+    <Compile Include="Language\Implementations\SimpleType.cs" />
+    <Compile Include="Language\Implementations\TextComment.cs" />
+    <Compile Include="Models\ParameterReplacers\SameClassTupleOrEnumerableGenerator.cs" />
+    <Compile Include="Models\RegionsGenerator.cs" />
+    <Compile Include="OutputWriter.cs" />
+    <Compile Include="ProjectIO.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="TestWindow.xaml.cs">
+      <DependentUpon>TestWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="TestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="Data\NOT-USED.txt" />
+    <Resource Include="Data\NotGenericTuplesDeclaration.txt" />
+    <Resource Include="Data\Other.txt" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Language\Access.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BracesWordsResolver.cs" />
+    <Compile Include="CodeInjectorStateMachine.cs" />
+    <Resource Include="Data\Current.txt" />
+    <Content Include="Data\GenericRequiredInBodyLinqDeclaration.txt" />
+    <Content Include="Data\AllLinqPlusComments.txt" />
+    <Content Include="Data\ComentsTypeFromDeclarations.txt" />
+    <Compile Include="Models\GenarationHelper.cs" />
+    <Compile Include="CodeInjector.cs" />
+    <Compile Include="Language\IMethodParam.cs" />
+    <Compile Include="Language\IMethodSignature.cs" />
+    <Compile Include="Language\IMethodTemplate.cs" />
+    <Compile Include="Language\Implementations\LinqDecarationMethodBody.cs" />
+    <Compile Include="Models\LinqDecarationParser.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Language\MethodBodyWriter.cs" />
+    <Compile Include="Language\MethodModifiers.cs" />
+    <Compile Include="Language\Implementations\MethodParam.cs" />
+    <Compile Include="Language\Implementations\MethodSignature.cs" />
+    <Compile Include="Language\Implementations\MethodTemplate.cs" />
+    <Compile Include="Models\CaseSource.cs" />
+    <Compile Include="Models\CommentsTypesGenerator.cs" />
+    <Compile Include="Models\DocumentationCommentsTreeBuilder.cs" />
+    <Compile Include="Models\DocumentationCommentsBuilder.cs" />
+    <Compile Include="Models\CommentNode.cs" />
+    <Compile Include="Models\Factories.cs" />
+    <Compile Include="Models\ICaseSource.cs" />
+    <Compile Include="Models\ParameterReplacers\ICaseGenerator.cs" />
+    <Compile Include="Models\DefaultDeclarationGenerator.cs" />
+    <Compile Include="Models\MethodTemplateSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\AllLinqDecaration.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{c4658356-768f-412f-a1c3-f6f0e3e48040}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\SimpleLinqDeclaration.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

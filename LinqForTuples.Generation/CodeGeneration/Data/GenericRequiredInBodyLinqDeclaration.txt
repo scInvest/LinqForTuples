@@ -1,0 +1,46 @@
+﻿//
+// Summary:
+//     Filters the elements of an System.Collections.IEnumerable based on a specified
+//     type.
+//
+// Parameters:
+//   source:
+//     The System.Collections.IEnumerable whose elements to filter.
+//
+// Type parameters:
+//   TResult:
+//     The type to filter the elements of the sequence on.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that contains elements from the input
+//     sequence of type TResult.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+public static IEnumerable<TResult> OfType<TResult>(this IEnumerable source);
+
+//
+// Summary:
+//     Casts the elements of an System.Collections.IEnumerable to the specified type.
+//
+// Parameters:
+//   source:
+//     The System.Collections.IEnumerable that contains the elements to be cast to type
+//     TResult.
+//
+// Type parameters:
+//   TResult:
+//     The type to cast the elements of source to.
+//
+// Returns:
+//     An System.Collections.Generic.IEnumerable`1 that contains each element of the
+//     source sequence cast to the specified type.
+//
+// Exceptions:
+//   T:System.ArgumentNullException:
+//     source is null.
+//
+//   T:System.InvalidCastException:
+//     An element in the sequence cannot be cast to type TResult.
+public static IEnumerable<TResult> Cast<TResult>(this IEnumerable source);
