@@ -46,7 +46,7 @@ namespace Tests
             gen.Generate();
 
             var project = PathResolver.Instance.Solutions.NetFrameworkSolution;
-            RunMsBuild(project, "dotnet build");
+            RunMsBuild(project, "dotnet build  /property:Configuration=Release");
         }
         [TestMethod]
 
@@ -59,7 +59,7 @@ namespace Tests
             gen.Generate();
 
             var project = PathResolver.Instance.Solutions.DotNet6Solution;
-            RunMsBuild(project, "dotnet build");
+            RunMsBuild(project, "dotnet build  /property:Configuration=Release");
         }
         [TestMethod]
 
@@ -72,7 +72,7 @@ namespace Tests
             gen.Generate();
 
             var project = PathResolver.Instance.Solutions.StandradSolution;
-            RunMsBuild(project, "dotnet build");
+            RunMsBuild(project, "dotnet build  /property:Configuration=Release");
         }
 
         static void RunMsBuild(string projectPath, string buildType)
@@ -105,7 +105,7 @@ namespace Tests
         private static void EvaluateTime(string output)
         {
             var minValueExpected = 4;//seconds
-            var maxValueExpected = 20;//seconds
+            var maxValueExpected = 30;//seconds
             const string sampleMessageToParse = "Time Elapsed 00:00:07.73";
             output.Contains("Time Elapsed ").ShouldBeTrue();
 
