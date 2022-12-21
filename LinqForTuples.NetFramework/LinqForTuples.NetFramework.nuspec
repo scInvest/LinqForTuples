@@ -3,19 +3,15 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>Linq For Tuples</title>
-    <authors>Patryk PGR</authors>
+    <title>$title$</title>
+    <authors>$author$</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
-	<!-- <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl> -->
-    <description>'Linq' like extenstion methods for symbol value tuples</description>
-    <releaseNotes>Initia package, working beta version</releaseNotes>
+    <projectUrl>https://github.com/scInvest/LinqForTuples</projectUrl>
+    <description>$description$</description>
+    <releaseNotes>Initial commit for first working version</releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags>LinqForTuples Linq For Tuples</tags>
-	<readme>README.md</readme>
+    <tags>LinqForTuples Linq Tuples NetFramework System.ValueTuple PGR</tags>
   </metadata>
-    <files>
-		<file src="README.md" />
-    </files>
 </package>
