@@ -10,6 +10,8 @@ LinqForTuples
 
 
 # Some examples:
+    //all standard linq extenstions are supported
+    //plus some tuple specific extras
     (a,b).Swipe( a > b) // one line swiping
    
     (1, 2, 3, 4).Min() // return 0
