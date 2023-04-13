@@ -10,7 +10,7 @@ LinqForTuples
 
 #How to build?
 
-Open generation project in visual studio 2022. Use UI to generate 
+Open generation project in visual studio 2022. Use UI to generate selected version. Open generated project in top most directory eg NetFramwork. Rebuild solution.
 
 # Some examples:
     //all standard linq extenstions are supported
