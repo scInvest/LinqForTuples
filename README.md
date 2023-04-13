@@ -8,7 +8,7 @@ Other folders are generation output or they are containing testing code
 Install nugetpackage in ur project:
 LinqForTuples 
 
-#How to build?
+# How to build?
 
 Open generation project in visual studio 2022. Use UI to generate selected version. Open generated project in top most directory eg NetFramwork. Rebuild solution.
 
