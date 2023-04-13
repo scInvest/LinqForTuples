@@ -16,7 +16,11 @@ LinqForTuples
     (1, 2, 3, 4).Where(x > 2) // return 3,4
     (a, b, b, d).ToList() // one line list creation 
 
-    var array = (1, 2, 3, 4).ToArray();
-    var collection = (array, 5, 6, 7).ToArray() // one line collections and single items concatenations
+    var array = (1, 2, 3, 4);
+    var collection = array.Concat(5,6,7); // one line collections and single items concatenations
     (btm, btm2, btm3).ForEach(x => x.Dispose()) // grouping repetitive calls. Composite pattern
 
+    var items = (4,5,6).ToArray();
+    var items2 = (7,8,9).ToArray();
+    var c = (1, 2, 3, items, items2).Many(); //joining collections and sinle items in one line -> 1,2,3,4,5,6,7,8,9
+     
