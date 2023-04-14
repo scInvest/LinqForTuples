@@ -9,7 +9,7 @@ using System.Diagnostics;
 namespace Tests.Common
 {
 
-    internal class MemoryIO: IInputReader, OutputWriter
+    internal class MemoryIO: IInputReader, IOutputWriter
     {
         private static readonly Dictionary<string, string> memory = new Dictionary<string, string>();
 

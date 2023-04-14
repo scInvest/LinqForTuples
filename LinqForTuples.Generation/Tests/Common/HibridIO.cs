@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Tests.Common
 {
-    internal class HibridIO : IInputReader, OutputWriter
+    internal class HibridIO : IInputReader, IOutputWriter
     {
         MemoryIO inMemory = new MemoryIO();
         FileInput realRead = new FileInput();

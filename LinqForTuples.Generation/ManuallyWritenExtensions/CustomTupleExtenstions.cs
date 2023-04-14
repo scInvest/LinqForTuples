@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace ManuallyWritenExtensions
 {
+
     //Please add each method to correspoinding Data file.
     [CopyClassAtrribute(CopyMode.CopyClass, "NetStandard_6", "TestProject")]
     public class CustomTupleExtenstions

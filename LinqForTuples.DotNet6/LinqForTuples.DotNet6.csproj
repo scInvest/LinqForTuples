@@ -5,6 +5,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PackageId>Pgr.1.0.1.net6</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Pgr</Authors>
+    <Company>Pgr</Company>
+	<ReleaseNotes>Initial commit for dotNet 6</ReleaseNotes>
+	<Tags>Linq for tuples LinqForTuples PGR DotNet6</Tags>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

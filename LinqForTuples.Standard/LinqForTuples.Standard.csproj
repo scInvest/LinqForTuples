@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>LinqForTuples.Standard</Title>
+    <Description>Extension method to use System.ValueTuples as Enumerable</Description>
+    <Copyright>PGR 2022</Copyright>
+    <PackageProjectUrl>https://github.com/scInvest/LinqForTuples</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/scInvest/LinqForTuples</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>LInqForTuples Linq For Tuples System.ValueTuple Extenstions PGR Standard</PackageTags>
+    <PackageReleaseNotes>First working version for net standard</PackageReleaseNotes>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>

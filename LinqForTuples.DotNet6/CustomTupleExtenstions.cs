@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace LinqForTuples.DotNet6
 {
+
     //Please add each method to correspoinding Data file.
     public class CustomTupleExtenstions
     {

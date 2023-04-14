@@ -2,16 +2,16 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>1.0.1.0</version>
     <title>$title$</title>
     <authors>$author$</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
-    <projectUrl>https://github.com/scInvest/LinqForTuples</projectUrl>
-    <description>$description$</description>
-    <releaseNotes>Initial commit for first working version</releaseNotes>
+    <projectUrl>https://github.com/scInvest/LinqForTuples/</projectUrl>
+    <description>Extension method to use system value tuples like collections</description>
+    <releaseNotes>Update nuget package</releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags>LinqForTuples Linq Tuples NetFramework System.ValueTuple PGR</tags>
+    <tags>Linq for tuples LinqForTuples System.ValueTuple PGR</tags>
   </metadata>
 </package>
