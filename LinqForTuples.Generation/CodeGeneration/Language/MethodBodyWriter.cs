@@ -4,7 +4,7 @@ using CodeGeneration.Language.Implementations;
 
 namespace CodeGeneration.Language
 {
-    public interface MethodBodyWriter
+    public interface IMethodBodyWriter
     {
         IReadOnlyList<string> CreateBody(MethodTemplate method);
     }

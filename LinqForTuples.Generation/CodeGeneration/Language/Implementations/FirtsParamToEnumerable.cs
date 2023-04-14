@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CodeGeneration.Language.Implementations
 {
-    class FirtsParamToEnumerable : MethodBodyWriter
+    class FirtsParamToEnumerable : IMethodBodyWriter
     {
         private static readonly string[] methodsToCall = new[] { ".ToEnumerable()" };
         public IReadOnlyList<string> CreateBody(MethodTemplate method)

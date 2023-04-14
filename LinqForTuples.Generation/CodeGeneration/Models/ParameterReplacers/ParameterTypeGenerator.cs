@@ -2,7 +2,7 @@
 
 namespace CodeGeneration.Models.ParameterReplacers
 {
-    interface ParameterTypeGenerator
+    interface IParameterTypeGenerator
     {
         IEnumerable<(string[] Types, string Tuple)> Generate();
     }

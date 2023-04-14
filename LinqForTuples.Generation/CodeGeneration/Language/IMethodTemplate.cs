@@ -5,6 +5,6 @@ namespace CodeGeneration.Language
     {
         IComment Comments { get; }
         IMethodSignature Signature { get; }
-        MethodBodyWriter Body { get; }
+        IMethodBodyWriter Body { get; }
     }
 }

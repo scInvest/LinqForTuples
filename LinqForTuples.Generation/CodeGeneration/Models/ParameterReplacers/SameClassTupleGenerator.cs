@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CodeGeneration.Models.ParameterReplacers
 {
-    public class SameClassTupleGenerator : ParameterTypeGenerator
+    public class SameClassTupleGenerator : IParameterTypeGenerator
     {
         private readonly string type;
 

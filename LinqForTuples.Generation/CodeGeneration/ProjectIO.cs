@@ -12,8 +12,8 @@ namespace CodeGeneration
             set { reader.Property = value; }
         }
 
-        private static SingleSetProperty<OutputWriter> writer = new SingleSetProperty<OutputWriter>();
-        public static OutputWriter Writer
+        private static SingleSetProperty<IOutputWriter> writer = new SingleSetProperty<IOutputWriter>();
+        public static IOutputWriter Writer
         {
             get { return writer.Property; }
             set { writer.Property = value; }

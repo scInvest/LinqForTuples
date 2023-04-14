@@ -2,7 +2,7 @@
 
 namespace CodeGeneration.Models.ParameterReplacers
 {
-    public class SameClassTupleOrEnumerableGenerator : ParameterTypeGenerator
+    public class SameClassTupleOrEnumerableGenerator : IParameterTypeGenerator
     {
         private readonly string type;
 

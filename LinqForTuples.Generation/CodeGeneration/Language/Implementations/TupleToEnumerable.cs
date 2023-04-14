@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CodeGeneration.Language.Implementations
 {
-    class TupleToEnumerableMethodBody : MethodBodyWriter
+    class TupleToEnumerableMethodBody : IMethodBodyWriter
     {
         public IReadOnlyList<string> CreateBody(MethodTemplate method)
         {

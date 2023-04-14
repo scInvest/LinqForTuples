@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CodeGeneration.Models.ParameterReplacers
 {
-    public class AllTypesTupleGenerator : ParameterTypeGenerator
+    public class AllTypesTupleGenerator : IParameterTypeGenerator
     {
         private readonly string type;
         private readonly int start;

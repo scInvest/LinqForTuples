@@ -2,11 +2,11 @@
 
 namespace CodeGeneration.Models.ParameterReplacers
 {
-    class CompositeGenerator : ParameterTypeGenerator
+    class CompositeGenerator : IParameterTypeGenerator
     {
-        private readonly ParameterTypeGenerator[] parameterTypeGenerators;
+        private readonly IParameterTypeGenerator[] parameterTypeGenerators;
 
-        public CompositeGenerator(params ParameterTypeGenerator[] parameterTypeGenerators)
+        public CompositeGenerator(params IParameterTypeGenerator[] parameterTypeGenerators)
         {
             this.parameterTypeGenerators = parameterTypeGenerators;
         }

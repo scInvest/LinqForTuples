@@ -27,7 +27,7 @@ namespace CodeGeneration.Models.ParameterReplacers
             return (Generate(method, type.ToString()), true);
         }
 
-        protected virtual ParameterTypeGenerator OverridesGenerator(string type)
+        protected virtual IParameterTypeGenerator OverridesGenerator(string type)
         {
             return new SameClassTupleGenerator(type);
         }

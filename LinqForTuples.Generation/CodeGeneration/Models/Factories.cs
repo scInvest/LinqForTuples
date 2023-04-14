@@ -115,7 +115,7 @@ namespace CodeGeneration.Models
         public static IMethodTemplateSource GenericRequiredInBody => LinqMethod(x => new LinqDecarationMethodBodyWithGeneric());
         public static IMethodTemplateSource TupleToEnumerable => LinqMethod(x => new TupleToEnumerableMethodBody());
 
-        private static MethodTemplateSource LinqMethod(Func<string, MethodBodyWriter> makeBody)
+        private static MethodTemplateSource LinqMethod(Func<string, IMethodBodyWriter> makeBody)
         {
             return new MethodTemplateSource(LinqDecarationParser.FromLinqDeclaration, makeBody);
         }

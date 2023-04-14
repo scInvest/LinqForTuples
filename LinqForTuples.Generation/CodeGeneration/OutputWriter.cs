@@ -2,7 +2,7 @@
 
 namespace CodeGeneration
 {
-    public interface OutputWriter
+    public interface IOutputWriter
     {
         void Write(string text, ICaseSource @case);
     }

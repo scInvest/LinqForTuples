@@ -5,13 +5,13 @@
         private readonly ICasesGenerator @case;
         private readonly ICaseSource source;
         private readonly IInputReader input;
-        private readonly OutputWriter writer;
+        private readonly IOutputWriter writer;
 
-        public GenrationOutputBaseOnCase(ICasesGenerator @case, IInputReader input, OutputWriter writer)
+        public GenrationOutputBaseOnCase(ICasesGenerator @case, IInputReader input, IOutputWriter writer)
         : this(@case, @case.Source, input, writer)
         {
         }
-        public GenrationOutputBaseOnCase(ICasesGenerator @case, ICaseSource source, IInputReader input, OutputWriter writer)
+        public GenrationOutputBaseOnCase(ICasesGenerator @case, ICaseSource source, IInputReader input, IOutputWriter writer)
         {
             this.@case = @case;
             this.source = source;

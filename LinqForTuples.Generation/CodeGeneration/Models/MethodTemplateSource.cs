@@ -7,10 +7,10 @@ namespace CodeGeneration.Models
     class MethodTemplateSource : IMethodTemplateSource
     {
         private readonly Func<string, MethodSignature> makeSignature;
-        private readonly Func<string, MethodBodyWriter> makeBody;
+        private readonly Func<string, IMethodBodyWriter> makeBody;
         private readonly DocumentationCommentsBuilder builder = new DocumentationCommentsBuilder();
 
-        public MethodTemplateSource(Func<string, MethodSignature> makeSignature, Func<string, MethodBodyWriter> makeBody)
+        public MethodTemplateSource(Func<string, MethodSignature> makeSignature, Func<string, IMethodBodyWriter> makeBody)
         {
             this.makeSignature = makeSignature;
             this.makeBody = makeBody;

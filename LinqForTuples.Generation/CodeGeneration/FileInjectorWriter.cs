@@ -2,7 +2,7 @@
 
 namespace CodeGeneration
 {
-    public class FileInjectorWriter : OutputWriter
+    public class FileInjectorWriter : IOutputWriter
     {
         public void Write(string text, ICaseSource @case)
         {

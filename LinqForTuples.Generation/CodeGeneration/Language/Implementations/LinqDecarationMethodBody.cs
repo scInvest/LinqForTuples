@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace CodeGeneration.Language.Implementations
 {
-    class ParamsToEnumerable : MethodBodyWriter
+    class ParamsToEnumerable : IMethodBodyWriter
     {
         public IReadOnlyList<string> CreateBody(MethodTemplate method)
         {

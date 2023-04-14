@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace CodeGeneration.Language.Implementations
 {
-    class LinqDecarationMethodBodyWithGeneric : MethodBodyWriter
+    class LinqDecarationMethodBodyWithGeneric : IMethodBodyWriter
     {
         public IReadOnlyList<string> CreateBody(MethodTemplate method)
         {

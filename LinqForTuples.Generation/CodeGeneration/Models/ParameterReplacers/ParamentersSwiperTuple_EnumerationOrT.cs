@@ -5,7 +5,7 @@
         public ParamentersSwiperTuple_EnumerationOrT(bool thisRequired = true) : base(thisRequired)
         {
         }
-        protected override ParameterTypeGenerator OverridesGenerator(string type)
+        protected override IParameterTypeGenerator OverridesGenerator(string type)
         {
             var enumerable = new SameClassTupleOrEnumerableGenerator(type);
             var normal = new SameClassTupleGenerator(type);

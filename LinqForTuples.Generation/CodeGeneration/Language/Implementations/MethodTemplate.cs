@@ -5,7 +5,7 @@ namespace CodeGeneration.Language.Implementations
     public class MethodTemplate : IMethodTemplate
     {
         public MethodSignature Signature { get; set; }
-        public MethodBodyWriter Body { get; set; }
+        public IMethodBodyWriter Body { get; set; }
         public IComment Comments { get; set; }
 
         IMethodSignature IMethodTemplate.Signature => this.Signature;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CodeGeneration.Language.Implementations
 {
-    class CallStatickMethodWhitEnumerable : MethodBodyWriter
+    class CallStatickMethodWhitEnumerable : IMethodBodyWriter
     {
         private readonly string @class;
 
